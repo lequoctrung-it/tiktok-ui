@@ -67,7 +67,7 @@ function Search() {
                 visible={showResult && searchResult.length > 0}
                 interactive={true}
                 render={(attrs) => (
-                    <div className={cx('search-result')} tabIndex="-1" {...attrs}>
+                    <div className={cx('search-result')} tabIndex='-1' {...attrs}>
                         <PopperWrapper>
                             <h4 className={cx('search-title')}>Accounts</h4>
                             {searchResult.map((result) => (
@@ -82,7 +82,7 @@ function Search() {
                     <input
                         ref={inputRef}
                         value={searchValue}
-                        placeholder="Search accounts and videos"
+                        placeholder='Search accounts and videos'
                         spellCheck={false}
                         onChange={handleChange}
                         onFocus={() => setShowResult(true)}
