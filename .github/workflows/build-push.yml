@@ -1,6 +1,6 @@
 name: 'build-push'
 on:
-  commit:
+  push:
     branches:
       - main
 
